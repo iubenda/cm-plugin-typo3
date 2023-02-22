@@ -1,0 +1,42 @@
+{
+    "name": "consentmanger/consentmanager-v2",
+    "type": "typo3-cms-extension",
+    "description": "Consent Manager is a GDPR / CCPA consent management solution (SaaS, Software as a Service). In simple words a \u201ccookie banner\u201d. This tool allows to ask website visitors for consent and/or enable opt-out from data processing, cookies, sale of personal information and so on. This helps our clients to fulfil their legal requirements under GDPR, CCPA and other legislations.",
+    "authors": [
+        {
+            "name": "consentmanager AB",
+            "role": "Product Manager"
+        }
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5 || ^10 || ^11",
+        "php": "^7.2 || ^8.0"
+    },
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://bitbucket.org/consentmanager/consentmanager_typo3.git"
+      }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CONSENTMANGER\\ConsentmanagerV2\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CONSENTMANGER\\ConsentmanagerV2\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/consentmanager-v2": "self.version"
+    },
+    "extra": {
+      "typo3/cms": {
+         "extension-key": "consentmanager_v2"
+      }
+   }
+}

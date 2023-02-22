@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="content">
+    <link href="{filePaths.customCheckerCss}" rel="stylesheet" type="text/css" />
+    <div class="contentbg">
+        <div class="container">
+            <img src="{baseUrl}typo3conf/ext/consentmanager_v2/Resources/Public/Icons/logo.png" class="img-pos" />
+            <h1>Welcome to Consent Manager
+            </h1>
+                <div class="tx_consentmanager">
+                    <h3>Follow the below steps to set up your Consent Manager.</h3>
+                    <ul>
+                        <li>First get your CMP Code-ID. Here is the link to register <a href="https://www.consentmanager.net/" target="_blank">https://www.consentmanager.net/</a>. We will provide you CMP Code-ID after registration.</li>
+                        <li>Enter your CMP Code-ID in the Consent Manager settings page (Click the get started button below to access the settings page)</li>
+                        <li>Choose your blocking mode (Automatic / Semi-Automatic)</li>
+                        <li>Enter Custom HTML code (optional)</li>
+                        <li>Click Submit button</li>
+                    </ul>
+                    <div>
+                        <f:link.action action="edit"><button class="btn btn-submit">Get started</button></f:link.action>
+                    </div>
+                </div>
+        </div>
+    </div>
+</f:section>
+</html>

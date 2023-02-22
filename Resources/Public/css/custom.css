@@ -1,0 +1,81 @@
+.contentbg {
+    width: 100%;
+    height: 100vh;
+    background: #3175ac;
+    color: #fff !important;
+    padding: 50px 0 20px;
+}
+.contentbg-edit {
+    padding: 50px 0 20px;
+}
+.contentbg a {
+    display: inline-block;
+    color: #ffd341;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.contentbg a:hover {
+    color: #ffd341;
+    text-decoration: none;
+}
+.contentbg ul {
+    margin-top: 20px;
+    padding-left: 15px;
+}
+.contentbg ul li {
+    padding-bottom: 20px;
+}
+button.btn.btn-submit {
+    background: #c83c3c;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding: 8px 15px;
+}
+button.btn.btn-submit:focus {
+    outline: none;
+}
+.contentbg .img-pos{
+    margin-bottom: 30px;
+}
+.contentbg-edit .row {
+    align-items: center;
+}
+.contentbg-edit label {
+    margin-bottom: 10px !important;
+    font-weight: bold;
+}
+.contentbg-edit a {
+    color: #3175ac !important;
+    font-weight: bold;
+}
+.contentbg-edit a:hover {
+    color: #3175ac !important;
+    text-decoration: none;
+}
+.contentbg-edit h1 {
+    margin-bottom: 30px;
+}
+.tx_consentmanager .image-blk {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tx_consentmanager .mt-10 {
+    margin-top: 10px;
+}
+.tx_consentmanager .mb-10 {
+    margin-bottom: 10px;
+}
+.tx_consentmanager .mt-15 {
+    margin-top: 15px;
+}
+.tx_consentmanager .mb-15 {
+    margin-bottom: 15px;
+}
+.tx_consentmanager .mt-20 {
+    margin-top: 20px;
+}
+.tx_consentmanager .mb-20 {
+    margin-bottom: 20px;
+}

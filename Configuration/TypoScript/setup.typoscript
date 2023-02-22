@@ -1,0 +1,15 @@
+
+# Module configuration
+module.tx_consentmanagerv2_web_consentmanagerv2consentmanagerv2 {
+    persistence {
+        storagePid = {$module.tx_consentmanagerv2_consentmanagerv2.persistence.storagePid}
+    }
+    view {
+        templateRootPaths.0 = EXT:consentmanager_v2/Resources/Private/Backend/Templates/
+        templateRootPaths.1 = {$module.tx_consentmanagerv2_consentmanagerv2.view.templateRootPath}
+        partialRootPaths.0 = EXT:consentmanager_v2/Resources/Private/Backend/Partials/
+        partialRootPaths.1 = {$module.tx_consentmanagerv2_consentmanagerv2.view.partialRootPath}
+        layoutRootPaths.0 = EXT:consentmanager_v2/Resources/Private/Backend/Layouts/
+        layoutRootPaths.1 = {$module.tx_consentmanagerv2_consentmanagerv2.view.layoutRootPath}
+    }
+}

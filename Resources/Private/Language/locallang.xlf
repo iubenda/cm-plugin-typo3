@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:consentmanager_v2/Resources/Private/Language/locallang" date="2021-07-29T15:45:44Z" product-name="consentmanager_v2">
+		<header/>
+		<body>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager" resname="tx_consentmanagerv2_domain_model_consentmanager">
+				<source>Consentmanager</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.settings" resname="tx_consentmanagerv2_domain_model_consentmanager.settings">
+				<source>Consent Manager Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.cmp_id" resname="tx_consentmanagerv2_domain_model_consentmanager.cmp_id">
+				<source>CMP Code-ID</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.blocking-mode" resname="tx_consentmanagerv2_domain_model_consentmanager.blocking-mode">
+				<source>Blocking-mode</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.blocking-mode.opt1" resname="tx_consentmanagerv2_domain_model_consentmanager.blocking-mode.opt1">
+				<source>Automatic</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.blocking-mode.opt2" resname="tx_consentmanagerv2_domain_model_consentmanager.blocking-mode.opt2">
+				<source>Semi-Automatic</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.cdnurl" resname="tx_consentmanagerv2_domain_model_consentmanager.cdnurl">
+				<source>CDN Url</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.deliveryurl" resname="tx_consentmanagerv2_domain_model_consentmanager.deliveryurl">
+				<source>DELIVERY Url</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.custom_field" resname="tx_consentmanagerv2_domain_model_consentmanager.custom_field">
+				<source>Custom HTML</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.submit" resname="tx_consentmanagerv2_domain_model_consentmanager.submit">
+				<source>Submit</source>
+			</trans-unit>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager.footernote" resname="tx_consentmanagerv2_domain_model_consentmanager.footernote">
+				<source>If you don't have CMP Code-ID, get it after registering at this link</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:consentmanager_v2/Resources/Private/Language/locallang_db" date="2021-07-29T15:45:44Z" product-name="consentmanager_v2">
+		<header/>
+		<body>
+			<trans-unit id="tx_consentmanagerv2_domain_model_consentmanager" resname="tx_consentmanagerv2_domain_model_consentmanager">
+				<source>Consentmanager</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,103 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="content">
+    <link href="{filePaths.customCheckerCss}" rel="stylesheet" type="text/css" />
+    <script src="{filePaths.jsScript}"></script>
+    <div class="contentbg-edit">
+      <div class="container">
+          <h1><f:translate key="LLL:EXT:consentmanager_v2/Resources/Private/Language/locallang.xlf:tx_consentmanagerv2_domain_model_consentmanager.settings" /></h1>
+          <div class="tx_consentmanager">
+              <f:form action="check" name="customer" id="check" enctype="multipart/form-data">
+                  <div class="form-group">
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <label><f:translate key="tx_consentmanagerv2_domain_model_consentmanager.cmp_id" /></label>
+                          </div>
+                          <div class="col-sm-12">
+                              <input type="text" name="tx_consentmanagerv2_web_consentmanagerv2consentmanagerv2[cmpId]" id="cmpId"  value="{consentmanagers.cmp_id}" class="form-control">
+                              <span id="cmpIdError"></span>
+                          </div>
+                          <div class="col-sm-12">
+                              <div class="image-blk">
+                                  <f:image src="EXT:consentmanager_v2/Resources/Public/images/cmpcodeid.png" alt="cmpcodeid" width="500c" height="168" />
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group mt-15 mb-15">
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <label><f:translate key="LLL:EXT:consentmanager_v2/Resources/Private/Language/locallang.xlf:tx_consentmanagerv2_domain_model_consentmanager.blocking-mode" /></label>
+                          </div>    
+                          <div class="col-sm-12">
+                              <f:if condition="{consentmanagers} == ''">
+                                  <f:then>
+                                      <input type="radio" name="tx_consentmanagerv2_web_consentmanagerv2consentmanagerv2[type]" id="type" value="automatic" /> <f:translate key="LLL:EXT:consentmanager_v2/Resources/Private/Language/locallang.xlf:tx_consentmanagerv2_domain_model_consentmanager.blocking-mode.opt1" /> &nbsp;&nbsp;
+                                      <input type="radio" name="tx_consentmanagerv2_web_consentmanagerv2consentmanagerv2[type]" id="type" value="semi_automatic" /> <f:translate key="LLL:EXT:consentmanager_v2/Resources/Private/Language/locallang.xlf:tx_consentmanagerv2_domain_model_consentmanager.blocking-mode.opt2" />
+                                  </f:then>
+                                  <f:else>
+                                      <input type="radio" name="tx_consentmanagerv2_web_consentmanagerv2consentmanagerv2[type]" id="type" value="automatic" <f:if condition="{consentmanagers.type} == 'automatic'">checked</f:if> /> <f:translate key="LLL:EXT:consentmanager_v2/Resources/Private/Language/locallang.xlf:tx_consentmanagerv2_domain_model_consentmanager.blocking-mode.opt1" /> &nbsp;&nbsp;
+                                      <input type="radio" name="tx_consentmanagerv2_web_consentmanagerv2consentmanagerv2[type]" id="type" value="semi_automatic" <f:if condition="{consentmanagers.type} == 'semi_automatic'">checked</f:if> /> <f:translate key="LLL:EXT:consentmanager_v2/Resources/Private/Language/locallang.xlf:tx_consentmanagerv2_domain_model_consentmanager.blocking-mode.opt2" />
+                                  </f:else>
+                              </f:if>
+                             <span id="typeError"></span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <label><f:translate key="tx_consentmanagerv2_domain_model_consentmanager.cdnurl" /></label>
+                          </div>
+                          <div class="col-sm-12">
+                              <input type="text" name="tx_consentmanagerv2_web_consentmanagerv2consentmanagerv2[cdnurl]" id="cdnUrl" value="{consentmanagers.cdnurl}" class="form-control" placeholder="https://cdn.consentmanager.net">
+                          </div>
+                          <div class="col-sm-12">
+                              <div class="image-blk">
+                                  <f:image src="EXT:consentmanager_v2/Resources/Public/images/cmpcdn.png" alt="cmpcdn" width="500c" height="168" />
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <label><f:translate key="tx_consentmanagerv2_domain_model_consentmanager.deliveryurl" /></label>
+                          </div>
+                          <div class="col-sm-12">
+                              <input type="text" name="tx_consentmanagerv2_web_consentmanagerv2consentmanagerv2[deliveryurl]" id="deliveryUrl" value="{consentmanagers.deliveryurl}" class="form-control" placeholder="https://delivery.consentmanager.net">
+                          </div>
+                          <div class="col-sm-12">
+                              <div class="image-blk">
+                                  <f:image src="EXT:consentmanager_v2/Resources/Public/images/cmphost.jpg" alt="cmphost" width="500c" height="168" />
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="row">
+                          <div class="col-sm-12"> 
+                              <label><f:translate key="tx_consentmanagerv2_domain_model_consentmanager.custom_field" /></label>
+                          </div>
+                          <div class="col-sm-12">
+                              <f:form.textarea name="customField" value="{consentmanagers.custom_field}" id="customField" class="form-control" rows="6" />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group text-center">
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <button type="button" class="btn btn-success" id="submitButton"><f:translate key="LLL:EXT:consentmanager_v2/Resources/Private/Language/locallang.xlf:tx_consentmanagerv2_domain_model_consentmanager.submit" /></button>
+                          </div>
+                      </div>
+                  </div>
+              </f:form>
+              <div>
+                  <f:translate key="LLL:EXT:consentmanager_v2/Resources/Private/Language/locallang.xlf:tx_consentmanagerv2_domain_model_consentmanager.footernote" /> <a href="https://www.consentmanager.net/" target="_blank">https://www.consentmanager.net/</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="{filePaths.customScript}"></script>
+</f:section>
+</html>
